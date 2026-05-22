@@ -171,5 +171,33 @@
         <p>&copy; 2025 Hobby Studio. All rights reserved.</p>
     </footer>
 
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <script>
+        (function() {
+            const glow = document.getElementById('cursorGlow');
+            let mouseX = 0, mouseY = 0, glowX = 0, glowY = 0;
+
+            document.addEventListener('mousemove', function(e) {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                glow.classList.add('active');
+            });
+
+            document.addEventListener('mouseleave', function() {
+                glow.classList.remove('active');
+            });
+
+            function animate() {
+                glowX += (mouseX - glowX) * 0.5;
+                glowY += (mouseY - glowY) * 0.5;
+                glow.style.left = glowX + 'px';
+                glow.style.top = glowY + 'px';
+                requestAnimationFrame(animate);
+            }
+            animate();
+        })();
+    </script>
+
 </body>
 </html>
