@@ -3,42 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobby Studio</title>
+    <title>Hobby Studio — Indie Game Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Hobby Studio</h1>
-    <h2>Our Games</h2>
-    <div>
-        <h3>Scoundrel Card Game</h3>
-        <p>Scoundrel is a roguelike dungeon-crawling card game where survival  
-            depends on strategy, resource management, and quick thinking.  
-            
-            Your goal is to navigate through a perilous dungeon, manage your health,  
-            and defeat monsters using weapons and potions. Every decision matters  
-            as you fight your way through dangerous encounters, balancing risk and reward.</p>
-        <a href="https://play.google.com/store/apps/details?id=premium.godot.scoundrel"><img src="statics/Google_Play_Store_badge_EN.svg.png"></a><br><br>
-        <a href="scoundrel/privacy_policy.html">Privacy Policy</a><br>
-    </div>
-    <div>
-        <h3>Suit Of Mutiny</h3>
-        <p>Suit of Mutiny is a strategic card game where you command soldiers from four empires - Earth, Ice, Fire, and Wind. Each empire grants unique battlefield powers.
-            
-            Twelve tyrants stand between you and freedom. Outsmart them. Outfight them. Overthrow them all.</p>
-        <a href=""><img src="statics/Google_Play_Store_badge_EN.svg.png"></a><br><br>
-        <a href="suit_of_mutiny/privacy_policy.html">Privacy Policy</a><br>
-    </div>
 
-    <div class="about-us">
-        <h2>About Us</h2>
-        <h3>Development</h3>
-        <p>Aditya Vats <a href="https://github.com/advats2"><img src="statics/github-mark.png"></a><br>Adrito Mukherjee <a href="https://github.com/Adrito-M"><img src="statics/github-mark.png"></a></p>
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="#" class="logo">Hobby<span>Studio</span></a>
+        <nav>
+            <a href="#games">Games</a>
+            <a href="#team">Team</a>
+        </nav>
+    </header>
 
-        <h3>Design</h3>
-        <p>Om Subham Pati <a href="https://github.com/OmSubham03"><img src="statics/github-mark.png"></a></p>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-badge">Indie Game Studio</div>
+        <h1>We Build Games<br>Worth Playing</h1>
+        <p>From card-driven dungeon crawls to strategic battlefield showdowns — we craft games that challenge your mind and keep you coming back.</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+            <a href="#games" class="hero-cta">Explore Our Games</a>
+            <a href="https://play.google.com/store/apps/developer?id=Hobby+Studio+25" class="hero-cta hero-cta-outline">View on Google Play</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="arrow"></div>
+        </div>
+    </section>
 
-        <h3>Testing</h3>
-        <p>Aditya Anand <a href="https://github.com/AdityaAnand2681"><img src="statics/github-mark.png"></a><br>Abhay Kumar <a href="https://github.com/abhaydangi"><img src="statics/github-mark.png"></a><br>Abhijeet Kumar <a href="https://github.com/elightx"><img src="statics/github-mark.png"></a></p>
-    </div>
+    <!-- Games -->
+    <section class="section" id="games">
+        <div class="section-header">
+            <h2>Our Games</h2>
+            <p>Strategy. Survival. Every card matters.</p>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="games-grid">
+            <div class="game-card">
+                <div class="game-header">
+                    <img src="statics/GameLogos/Scoundrel.png" alt="Scoundrel" class="game-logo">
+                    <div class="game-header-info">
+                        <h3>Scoundrel</h3>
+                        <div class="game-tags">
+                            <span class="game-tag roguelike">Roguelike</span>
+                            <span class="game-tag card">Card</span>
+                            <span class="game-tag strategy">Strategy</span>
+                        </div>
+                    </div>
+                </div>
+                <p>A roguelike dungeon-crawling card game where survival depends on strategy, resource management, and quick thinking. Navigate perilous dungeons, manage your health, and defeat monsters using weapons and potions. Every decision matters as you fight through dangerous encounters, balancing risk and reward.</p>
+                <div class="card-actions">
+                    <a href="https://play.google.com/store/apps/details?id=premium.godot.scoundrel" class="store-badge"><img src="statics/Google_Play_Store_badge_EN.svg.png" alt="Get it on Google Play"></a>
+                    <a href="scoundrel/privacy_policy.html" class="policy-link">Privacy Policy →</a>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-header">
+                    <img src="statics/GameLogos/SuitOfMutiny.png" alt="Suit of Mutiny" class="game-logo">
+                    <div class="game-header-info">
+                        <h3>Suit of Mutiny</h3>
+                        <div class="game-tags">
+                            <span class="game-tag strategy">Strategy</span>
+                            <span class="game-tag rebellion">Rebellion</span>
+                        </div>
+                    </div>
+                </div>
+                <p>A strategic card game where you command soldiers from four empires — Earth, Ice, Fire, and Wind. Each empire grants unique battlefield powers. Twelve tyrants stand between you and freedom. Outsmart them. Outfight them. Overthrow them all.</p>
+                <div class="card-actions">
+                    <a href="https://play.google.com/store/apps/details?id=com.hobbystudio.suitofmutiny" class="store-badge"><img src="statics/Google_Play_Store_badge_EN.svg.png" alt="Get it on Google Play"></a>
+                    <a href="suit_of_mutiny/privacy_policy.html" class="policy-link">Privacy Policy →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section" id="team">
+        <div class="section-header">
+            <h2>The Team</h2>
+            <p>The people behind the pixels.</p>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="team-section">
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="https://github.com/advats2.png" alt="Aditya Vats" class="avatar">
+                    <span>Aditya Vats</span>
+                    <div class="role-tags">
+                        <span class="role-tag dev">Dev</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/advats2" title="GitHub"><img src="statics/github-mark-white.png" alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/aditya-vats-664ab6255/" title="LinkedIn"><img src="statics/linkedin.svg" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://github.com/Adrito-M.png" alt="Adrito Mukherjee" class="avatar">
+                    <span>Adrito Mukherjee</span>
+                    <div class="role-tags">
+                        <span class="role-tag dev">Dev</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Adrito-M" title="GitHub"><img src="statics/github-mark-white.png" alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/adrito-mukherjee-826034224/" title="LinkedIn"><img src="statics/linkedin.svg" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://github.com/OmSubham03.png" alt="Om Subham Pati" class="avatar">
+                    <span>Om Subham Pati</span>
+                    <div class="role-tags">
+                        <span class="role-tag dev">Dev</span>
+                        <span class="role-tag design">Design</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/OmSubham03" title="GitHub"><img src="statics/github-mark-white.png" alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/om-subham-pati-a49785242/" title="LinkedIn"><img src="statics/linkedin.svg" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://github.com/abhaydangi.png" alt="Abhay Kumar" class="avatar">
+                    <span>Abhay Kumar</span>
+                    <div class="role-tags">
+                        <span class="role-tag dev">Dev</span>
+                        <span class="role-tag test">QA</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/abhaydangi" title="GitHub"><img src="statics/github-mark-white.png" alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/abhay-kumar-1b0ba7229/" title="LinkedIn"><img src="statics/linkedin.svg" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://github.com/AdityaAnand2681.png" alt="Aditya Anand" class="avatar">
+                    <span>Aditya Anand</span>
+                    <div class="role-tags">
+                        <span class="role-tag test">QA</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/AdityaAnand2681" title="GitHub"><img src="statics/github-mark-white.png" alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/aditya-anand-23bb86309/" title="LinkedIn"><img src="statics/linkedin.svg" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://github.com/elightx.png" alt="Abhijeet Kumar" class="avatar">
+                    <span>Abhijeet Kumar</span>
+                    <div class="role-tags">
+                        <span class="role-tag test">QA</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/elightx" title="GitHub"><img src="statics/github-mark-white.png" alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/abhijeet-kumar-l/" title="LinkedIn"><img src="statics/linkedin.svg" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="logo-footer">Hobby<span>Studio</span></div>
+        <p>&copy; 2025 Hobby Studio. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
