@@ -611,6 +611,25 @@ body::before {
     color: var(--accent-secondary);
 }
 
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin: 1rem 0;
+}
+
+.footer-socials a {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-socials a:hover {
+    color: var(--accent-secondary);
+}
+
 /* ===== PRIVACY POLICY PAGE ===== */
 .privacy-page {
     background-color: var(--bg-primary);
