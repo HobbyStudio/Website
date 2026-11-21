@@ -581,6 +581,53 @@ body::before {
     height: 16px;
 }
 
+/* ===== CONTACT ===== */
+.contact-section {
+    scroll-margin-top: 5rem;
+}
+
+.contact-card {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    text-align: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+}
+
+.contact-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.contact-email {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    max-width: 100%;
+    margin: 1rem 0;
+    color: var(--accent-secondary);
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    font-weight: 600;
+    overflow-wrap: anywhere;
+    text-decoration: none;
+}
+
+.contact-email:hover {
+    text-decoration: underline;
+}
+
+.contact-card .contact-note {
+    font-size: 0.85rem;
+}
+
+.contact-email:focus-visible,
+.footer-contact:focus-visible {
+    outline: 2px solid var(--accent-secondary);
+    outline-offset: 4px;
+}
+
 /* ===== FOOTER ===== */
 .footer {
     position: relative;
@@ -609,6 +656,20 @@ body::before {
 
 .footer .logo-footer span {
     color: var(--accent-secondary);
+}
+
+.footer-contact {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.footer-contact:hover {
+    color: var(--accent-secondary);
+    text-decoration: underline;
 }
 
 .footer-socials {
@@ -1332,4 +1393,3 @@ body::before {
         margin-bottom: 1.5rem;
     }
 }
-
